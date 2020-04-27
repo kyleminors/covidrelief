@@ -7,15 +7,18 @@ public class Manager : MonoBehaviour
 {
 
     public Business[] businesses;
-    public GameObject businessTemplate; 
+    public GameObject businessTemplate;
+    public RawImage newBusinessImage;
+    public Text titleInput;
+    public 
+
 
     // Start is called before the first frame update
     void Start()
     {
         foreach (Business business in businesses)
         {
-            var image = businessTemplate.GetComponent<RawImage>();
-            var nameText = businessTemplate.GetComponent<Text>();
+           
         }
     }
 
@@ -25,13 +28,13 @@ public class Manager : MonoBehaviour
        
     }
 
-    public void BuildBusiness(RawImage image, Text name, bool openBool)
+    public void BuildBusiness()
     {
 
         var newImage = businessTemplate.GetComponent<RawImage>();
-        newImage = image;
-
         var thisText = businessTemplate.GetComponent<Text>();
-        thisText = name; 
+
+
+
     }
 }
